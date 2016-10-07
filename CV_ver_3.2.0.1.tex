@@ -1,0 +1,245 @@
+% main changes are:
+%add the TA experience of the electronic technology class and circuit class
+% sort the TA experience as Work Experience
+%update the paper information.
+%...
+%
+%
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{amsmath,amsfonts,amssymb,graphicx}
+\usepackage{titlesec}
+\usepackage{array}
+\pagestyle{empty}
+\setlength{\itemsep}{0pt}
+\usepackage{paralist} 
+\let\itemize\compactitem 
+\hypersetup{hidelinks}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+%alignment of the section command.
+\makeatletter  
+\renewcommand{\section}{\@startsection  
+{section}  
+{12}  
+{\z@}  
+{0.2\baselineskip}  
+{0.1\baselineskip}  
+{\normalfont\large\scshape\bfseries}}  
+\makeatother
+
+%macros:
+%MARCO: draw a line.
+\newcommand{\dline} {\vspace{-0.3cm}
+\noindent\hrulefill 
+
+}
+
+%MARCO: title line.
+
+
+%-------MACRO: CV title
+\newcommand{\cvtitle}[6]
+{  
+	\begin{flushleft}
+	\huge\bfseries\scshape{#1}
+	\end{flushleft}  
+	%\vspace{1em}
+		\begin{flushleft}
+		#2\hfill{#4}
+		\end{flushleft}
+		\begin{flushleft}
+		#3 \hfill{#5}
+		\end{flushleft}
+		\footnotesize
+		#6
+		\normalsize 
+		\\  
+	\vspace{3pt}  
+	\dline
+}
+
+%MACRO: entry
+\newcommand{\entry}[5]
+{
+	\noindent
+	$\diamond$ \parbox[t]{\textwidth}
+	{
+		 \textbf{{#2}} \small
+		 \hfill #1
+		 \\ \textbf{#3} \hfill {#4}
+	\\#5
+	}\\ \normalsize  
+}
+%MARCO: entry(short)
+\newcommand{\entrys}[4]
+{
+	\noindent
+	$\diamond$ \parbox[t]{\textwidth}
+	{
+		 \textbf{{#2}} \small
+		 \hfill #1
+		 \\ \textbf{#3} \hfill {#4}
+	}\\ \normalsize  
+}
+
+%MARCO:subterm
+\newcommand{\subterm}[2]
+{
+	\small
+	\begin{itemize}
+	\item[#1] #2
+	\end{itemize}
+}
+\begin{document}
+\cvtitle{Teren Liu}  
+{School of Material Science and Engineering,}%此处地址在租赁邮局的邮箱之后要修改
+{Harbin Institute of Technology, Harbin, China} %地址栏2  
+{Phone: +86 13074572009}%电话  
+{Email: \href{mailto:teren.liu@hit.edu.cn}{teren.liu@hit.edu.cn} or \href{mailto:teren\_ liu@outlook.com}{teren\_liu@outlook.com}} 
+{\hfill Last Modified at Oct. 7th, 2016. Finished by \LaTeX} %邮箱
+\section{Education}
+\dline
+\entry
+ {09/2013--Now}
+ {Candidate for Bachelor of Engineering(expected 7/2016).}
+  {Department of Information Material Science and Technology, School of Material Science and Engineering, Harbin Institute of Technology.}{Harbin, China}
+ {
+ $\bullet$ Major GPA/GPA: 3.7/3.7.
+ 
+ $\bullet$ Publications: two SCI indexed paper, and one is first author published.(detail information on the Publication section ).
+} %地点  
+\normalsize
+\section{Publications}
+\dline
+\noindent $\diamond$ \textbf{Teren Liu}, Dongbo Wang, Fengyun Guo, Shujie Jiao, Jinzhong Wang, Yuhang Liu, Chunyang Luan, Wenwu Cao, and Liancheng Zhao. {“Effect of Annealing Temperature on the Optical Property of High Cd Content CdZnO Films.”} \emph{Super lattices and Microstructures}, \textbf{2016}, 97,569. doi: 10.1016/j.spmi.2016.07.010
+
+\noindent $\diamond$ Wuze Xie, Dongbo Wang, Fengyun Guo, \textbf{Teren Liu}, Shujie Jiao, Jinzhong Wang, Shiyong Gao, Qingjiang Yu, Yong Zhang, Chunyang Luan, Wenwu Cao, Liancheng Zhao. The effect of annealing temperature on the optical and electrical properties of cubic MgZnO films grown by RF magnetron sputtering. \emph{Journal of Materials Science: Materials in Electronics}, \textbf{2016}. doi:10.1007/s10854-016-5707-7
+\section{Research Experiences}%iGEM跟社团的经历是否可以放在后面活动经历部分？
+\dline
+\entry
+{05/2015-Now}
+{{Research Assistant.}  }
+{Department of Information Material Science and Technology, School of Material Science and Engineering, Harbin Institute of Technology.}
+{Harbin, China}
+{
+	$\bullet$ Experimental research projects: 
+	\begin{itemize}
+	\item[$\circ$]Preparation and enhancement of the ZnO/ZnCdO/ZnMgO film devices under RF magnetron sputtering method and hydro-thermal method (Two papers already published).
+	\item[$\circ$]Preparation and improvement of the AlN/AlInN film qualitity under RF magentron sputtering methhod (parameters getted for other work).
+	\item[$\circ$] Enhancement of the AlN film luminescence abilitty by the composition  with the ZnO nanowire structure.(papers under wrtting).
+	\item[$\circ$] Inprovement of the Cu$_2$O film heterojunction solar cell by RF magnetron sputtering method (still under research).
+	\item[$\circ$] The carrier mobilitity enhancement of the ZnMgO(high Mg composition) film material with Graphene film (papers under writting).
+	\end{itemize}
+	$\bullet$ Theoretical research projects:
+	\begin{itemize}
+	\item[$\circ$] Investigation of the doping effect of the ZnO and AlN material by DFT method (papers under writting).
+	\item[$\circ$] Investigation of the shape, scale and arrangement effect on the SPP resonance of the nano Ag structures by FDTD method (papers under writting).
+	%\item[$\circ$] Theoretical application of the topological insulator in far-infrared detection and EPR pairs establishment and sustain.% caution, if I didn't finished the work, I should re
+	\end{itemize}
+	$\bullet$ Laboratory management/establishment works:
+	\begin{itemize}
+	\item[$\circ$]Maintenance and reparation duty for Magnetron Sputtering machine (collaborate with two teacher).
+	\item[$\circ$] Independently build up and maintenance the first HPC plateform(both the (hardwarely and the softwarely)  which aims to fit the demand of the \emph{ab-initio} research and many other simulation, prediction requirements in the department. 
+	\item[$\circ$] Give tuition and help other graduated or senior students on the machine use principle, experimental skills and data processing skills.
+	\end{itemize}
+}
+\entry
+{9/2015-12/2015}
+{Research Student.}
+{Laboratory for photoelectric film materials, Center for Composite Materials, Harbin Institute of Technology.}
+{Harbin, China.}
+{$\bullet$ Preparation of diamond film by MWCVD method( reports were made).}
+\entry
+{10/2013-11/2014}
+{Research Group member.}
+{HIT-iGEM team. School of Life Science and Technology \& School of Chemistry and Chemical Engineering, Harbin Institute of Technology.}
+{Harbin, China}
+{$\bullet$ Research Works: 
+\begin{itemize}
+\item[$\circ$]\emph{In silico} analysis of the yeast bio-circuit's senstivity and degradation ability to the Dioxin.
+\item[$\circ$]software developing for the universal \emph{in silico} analysis requirements in synthetic biology(unfinished).
+\end{itemize}  
+}
+
+\entry
+ {10/2013-06/2014}
+ {Project Leader.}
+ {HIT Freshman Research Fellowships, Department of Information Material Science and Technology, School of Material Science and Engineering, Harbin  Institute of Technology.}
+ {Harbin, China}
+ {$\bullet$Works: 
+ \begin{itemize}
+ \item[$\circ$]Preparation of the ZnO nano film by the RF Magnetron Sputtering method.
+ \end{itemize}
+ 
+ }
+\section{Honors and Awards}
+\dline
+\entrys
+{2/2016}
+{Honorable Mention in Interdisciplinary Contest in Modeling(ICM)}
+{COMAP, which is sponsored by Mathematical Association of America(MAA) and Society for Industrial and Applied Mathematics(SIAM).}
+{Online Contest(International).}
+\entrys
+{10/2015}
+{First Prize(Heilongjiang Province) in China Undergraduate Mathematical Contest in Modelling}
+{China Society for Industrial and Applied Mathematics(CSIAM).}
+{Online Contest(National).}
+\entrys
+{10/2014}
+{First Prize(Heilongjiang Province) in China Undergraduate Mathematical Contest in Modelling}
+{ China Society for Industrial and Applied Mathematics(CSIAM).}
+{Online Contest(National).}
+\entrys
+{11/2014}
+{Bronze Medal on 2014 iGEM(International Genetically Engineered Machine) Jamboree.}
+{Massachusetts Institute of Technology(MIT).}
+{Cambridge, USA.}
+\entrys
+{07/2014}
+{Second Prize in HIT Freshman Research Fellowships.}
+{Harbin Institute of Technology.}
+{Harbin, China}
+\section{Work Experiences}
+\dline
+\entry
+{09/2015-01/2016}
+{Teaching Assistant.}
+{Course: "Semiconductor Physics".\\ Department of Physics, School of Science, Harbin Institue of Technology}
+{Harbin, China}
+{$\bullet$ Dues: Introductory classes for the Semiconductor Physics course.(P-N junction, light-emition diode physics) (in English).}
+\entry
+{09/2014-06/2015}
+{Subject Representive/Teaching Assistant.}
+{Course: "Electrical and Electronic Technology".\\ School of Electrical Engineering \& Automation, Harbin Institute of Technology.}
+{Harbin, China}
+{2/2016}
+{Dues: Answering the questions for the students and managing the homework and experiment reports.}
+\section{Activities}
+\dline
+\entry
+ {01/2015-01/2016}
+ {Vice-Chairman in HIT-Microsoft Technology Club.} {Microsoft Research Asia \& Harbin Institute of Technology.}
+ {Harbin, China}
+ {}
+\entry
+ {10/2013-06/2014}
+ {Team member.}
+ {HIT-ACM/ICPC(International Computer Programming Contest) team, School of Computer Science, Harbin Institute of Technology. }
+ {Harbin, China}
+ {}
+
+\section{Skills and Techniques}
+\dline
+\small
+\begin{itemize}
+\item[$\circ$]Programming with C(eight year experience), C++, Matlab, Python, R, Fortran, java, Common Lisp, Ocaml,and the Verilog HDL.
+\item[$\circ$]Using and managing of the \emph{Ab-Initio} software (like Quantum-Espresso, castep, and Abinit, ELK).
+\item[$\circ$]Linux Server Management(RHEL family/Suse family/Debian family).
+\item[$\circ$]Integrated Circuit design and modify in Verilog HDL; and EDA software like Quartus and Protel.
+\end{itemize}
+\normalsize
+%\section{Standard Tests}
+%\section{References}%推荐人
+\end{document}
